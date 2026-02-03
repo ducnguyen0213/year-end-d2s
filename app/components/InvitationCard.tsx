@@ -39,7 +39,7 @@ export default function InvitationCard({ guestName = "Quý Khách" }: { guestNam
         <div className="p-6 md:p-10 text-center">
           
           {/* LOGO */}
-          <div className="relative w-40 h-16 mx-auto mb-4 md:mb-6">
+          <div className="relative w-52 h-20 md:w-56 md:h-24 mx-auto mb-4 md:mb-6">
              <Image 
                src={eventConfig.company.logoUrl} 
                alt={eventConfig.company.name}
@@ -50,12 +50,12 @@ export default function InvitationCard({ guestName = "Quý Khách" }: { guestNam
           </div>
 
           {/* HEADER SECTION */}
-          <div className="space-y-3 mb-6 md:mb-8">
-            <p className="text-slate-500 text-xs md:text-sm font-semibold tracking-[0.2em] uppercase">
+          <div className="space-y-2 mb-6 md:mb-8 flex flex-col items-center">
+            <p className="text-slate-500 text-lg md:text-xl font-semibold tracking-[0.2em] uppercase text-center">
               {eventConfig.invitation.greeting}
             </p>
             
-            <h1 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-3">
+            <h1 className="text-[1.35rem] md:text-[1.6rem] font-bold text-slate-900 tracking-tight text-center">
               {guestName}
             </h1>
             
