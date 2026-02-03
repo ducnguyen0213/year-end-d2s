@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background-rgb: 15, 23, 42;
+}
+
+@theme {
+  --color-d2s-cyan: #0ea5e9;
+  --color-d2s-green: #84cc16;
+  --color-d2s-dark: #0f172a;
+}
+
+body {
+  /* Nền xanh đậm sang trọng làm nổi bật card trắng */
+  background-color: #0f172a; 
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.25), transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(132, 204, 22, 0.15), transparent 50%);
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
