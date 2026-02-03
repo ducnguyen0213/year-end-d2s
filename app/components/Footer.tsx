@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="max-w-3xl mx-auto px-4 flex flex-col items-center space-y-5">
         
         {/* Company Info Block */}
-        <div className="space-y-2">
-          <p className="font-bold text-white text-base md:text-lg uppercase tracking-wider drop-shadow-sm">
+        <div className="space-y-2 w-full flex flex-col items-center">
+          <p className="font-bold text-white text-base md:text-lg uppercase tracking-wider drop-shadow-sm text-center">
             {eventConfig.company.name}
           </p>
           <a 

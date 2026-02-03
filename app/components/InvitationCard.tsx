@@ -73,7 +73,7 @@ export default function InvitationCard({ guestName = "Quý Khách" }: { guestNam
               
               {/* Time Column */}
               <div className="flex flex-col items-center md:items-start text-center md:text-left md:border-r md:border-slate-200 md:pr-8">
-                <div className="flex items-center space-x-2 text-sky-600 font-bold uppercase text-xs tracking-wider mb-2">
+                <div className="flex items-center justify-center md:justify-start space-x-2 text-sky-600 font-bold uppercase text-xs tracking-wider mb-2">
                   <ClockIcon />
                   <span>Thời gian</span>
                 </div>
@@ -89,7 +89,7 @@ export default function InvitationCard({ guestName = "Quý Khách" }: { guestNam
 
               {/* Location Column */}
               <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                <div className="flex items-center space-x-2 text-sky-600 font-bold uppercase text-xs tracking-wider mb-2">
+                <div className="flex items-center justify-center md:justify-start space-x-2 text-sky-600 font-bold uppercase text-xs tracking-wider mb-2">
                   <LocationIcon />
                   <span>Địa điểm</span>
                 </div>
@@ -99,11 +99,8 @@ export default function InvitationCard({ guestName = "Quý Khách" }: { guestNam
                   rel="noopener noreferrer"
                   className="group block w-full"
                 >
-                  <p className="text-lg md:text-xl font-bold text-slate-800 group-hover:text-sky-600 transition-colors flex items-center justify-center md:justify-start gap-2">
+                  <p className="text-lg md:text-xl font-bold text-slate-800 group-hover:text-sky-600 transition-colors flex items-center justify-center md:justify-start">
                     {eventConfig.event.location.name}
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-lime-500 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
                   </p>
                   <p className="text-slate-500 text-xs md:text-sm mt-1 leading-relaxed group-hover:text-slate-700">
                     {eventConfig.event.location.address}
