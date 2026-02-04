@@ -73,12 +73,12 @@ export default function InvitationCard({ guestName = "Quý Khách" }: { guestNam
               
               {/* Time Column */}
               <div className="flex flex-col items-center md:items-start text-center md:text-left md:border-r md:border-slate-200 md:pr-8">
-                <div className="flex items-center justify-center md:justify-start space-x-2 text-sky-600 font-bold uppercase text-xs tracking-wider mb-2">
+                <div className="flex items-center justify-center md:justify-start space-x-2 text-sky-600 font-bold uppercase text-sm tracking-wider mb-2">
                   <ClockIcon />
                   <span>Thời gian</span>
                 </div>
                 <div>
-                  <p className="text-3xl md:text-5xl font-bold text-slate-800 tracking-tighter">
+                  <p className="text-[1.7rem] md:text-[2.5rem] font-bold text-slate-800 tracking-tighter">
                     {eventConfig.event.timeDisplay}
                   </p>
                   <p className="text-lime-600 font-semibold text-base md:text-lg uppercase mt-1">
@@ -89,7 +89,7 @@ export default function InvitationCard({ guestName = "Quý Khách" }: { guestNam
 
               {/* Location Column */}
               <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start space-x-2 text-sky-600 font-bold uppercase text-xs tracking-wider mb-2">
+                <div className="flex items-center justify-center md:justify-start space-x-2 text-sky-600 font-bold uppercase text-sm tracking-wider mb-2">
                   <LocationIcon />
                   <span>Địa điểm</span>
                 </div>
@@ -113,15 +113,11 @@ export default function InvitationCard({ guestName = "Quý Khách" }: { guestNam
 
           {/* FOOTER */}
           <div className="space-y-4">
-            <p className="text-slate-700 font-medium text-xs md:text-base italic">
-              "{eventConfig.invitation.closing}"
-            </p>
             
-            <div className="flex flex-col items-center justify-center pt-2">
-              <span className="text-[10px] text-slate-400 uppercase tracking-widest font-bold">TM. Ban Lãnh Đạo</span>
-              <span className="font-bold text-slate-900 text-sm md:text-base mt-1">{eventConfig.footer.signatoryRole}</span>
+            <div className="flex flex-col items-center justify-center pt-2 gap-3 md:gap-4">
+              <span className="font-semibold text-slate-900 text-xl md:text-2xl">{eventConfig.footer.signatoryRole}</span>
               {/* Tên ký dạng chữ ký cách điệu màu xanh thương hiệu */}
-              <span className="text-2xl md:text-3xl font-serif text-sky-600 mt-1 italic">
+              <span className="text-2xl md:text-3xl font-serif text-sky-600 italic">
                 {eventConfig.footer.signatoryName}
               </span>
             </div>

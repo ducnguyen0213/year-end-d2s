@@ -8,7 +8,7 @@ export default async function Home(props: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
   const searchParams = await props.searchParams;
-  const guestName = typeof searchParams.guest === 'string' ? searchParams.guest : "Quý Khách";
+  const guestName = typeof searchParams.guest === 'string' ? searchParams.guest : "Lãnh đạo, Nhân viên công ty D2S";
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-between font-sans selection:bg-sky-500 selection:text-white overflow-x-hidden relative">
